@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TestDevices" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vyx-ln-3ci">
+                                <rect key="frame" x="-0.5" y="0.0" width="375" height="566"/>
+                                <color key="backgroundColor" red="1" green="0.78918933346601761" blue="0.071408504506138226" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNs-px-7TV">
+                                <rect key="frame" x="53" y="582" width="290" height="65"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Testing Camera" backgroundImage="0021_BotonMovi.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="takeFoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="r74-hb-GF9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FNs-px-7TV" firstAttribute="top" secondItem="Vyx-ln-3ci" secondAttribute="bottom" constant="16" id="Cvu-zT-pbR"/>
+                            <constraint firstItem="Vyx-ln-3ci" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="25" id="D7O-iU-qly"/>
+                            <constraint firstAttribute="bottom" secondItem="Vyx-ln-3ci" secondAttribute="bottom" constant="101" id="OUf-ao-sEf"/>
+                            <constraint firstAttribute="trailing" secondItem="Vyx-ln-3ci" secondAttribute="trailing" constant="25" id="bKy-Pf-Uc0"/>
+                            <constraint firstItem="Vyx-ln-3ci" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="e3d-bA-C4o"/>
+                            <constraint firstItem="FNs-px-7TV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="37" id="kNT-sU-5Is"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="FNs-px-7TV" secondAttribute="bottom" constant="20" id="ll6-QS-0lD"/>
+                            <constraint firstItem="Vyx-ln-3ci" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="mgn-cC-ETc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FNs-px-7TV" secondAttribute="trailing" constant="16" id="pUM-fj-3Bp"/>
+                            <constraint firstAttribute="trailing" secondItem="Vyx-ln-3ci" secondAttribute="trailing" constant="0.60999999999999999" id="uSw-qy-jRC"/>
+                            <constraint firstItem="Vyx-ln-3ci" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="-0.60999999999999999" id="whP-2u-p3I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Vyx-ln-3ci" id="1Zh-RP-G6H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0021_BotonMovi.png" width="313" height="60"/>
+    </resources>
+</document>
